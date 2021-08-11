@@ -22,7 +22,7 @@ function scssTask() {
 
 // JavaScript Task
 function jsTask() {
-  return src("app/src/js/custom.js", { sourcemaps: true })
+  return src("app/src/js/custom.js", { sourcemaps: true, allowEmpty:true })
     .pipe(babel({ presets: ["@babel/preset-env"] }))
     .pipe(terser())
     .pipe(dest("dist", { sourcemaps: "." }));
