@@ -8,6 +8,15 @@ const cssnano = require("cssnano");
 const babel = require("gulp-babel");
 const terser = require("gulp-terser");
 const browsersync = require("browser-sync").create();
+const webpack = require('webpack');
+
+plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
+],
 
 // Use dart-sass for @use
 //sass.compiler = require('dart-sass');
