@@ -1,15 +1,21 @@
 @use "../globals";
+@import "../utlities/breakpoints";
+
 
 .owl-carousel .item {
     width: 90%;
     height: 400px;
 
+    @include breakpoint('md') {
+        width:100%;
+      }
+
     img {
         height: 200px;
         width: auto;
     }
-    
-     .card {
+
+    .card {
         height: 100%;
     }
 }
@@ -22,9 +28,14 @@
     background-color: var(--bg-color);
     border: var(--main-border);
     border-radius: 0;
-     img{
-    margin-top: 6%;
-}
+
+    @include breakpoint('xl') {
+        width:90%;
+      }
+
+    img {
+        margin-top: 6%;
+    }
 
 }
 
@@ -41,7 +52,11 @@
         border-radius: 0;
         width: 80%;
 
-        .bgImg{
+        @include breakpoint('xl') {
+            width:90%;
+          }
+
+        .bgImg {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -49,8 +64,6 @@
             width: auto;
         }
     }
-    
-   
+
+
 }
-
-

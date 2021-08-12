@@ -147,8 +147,7 @@ $(document).ready(function () {
         newsdata.articles.forEach((article) => {
 
           if (article.urlToImage == null) {
-            article.urlToImage = '/assets/images/no-image.jpg'
-
+            article.urlToImage = 'https://www.freeiconspng.com/uploads/no-image-icon-13.png" alt="Png Transparent No';
           }
 
           NewsSegment = `
