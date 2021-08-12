@@ -1,5 +1,4 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-
 @use "globals";
 @use "components";
-@use "utilities";
+@use "utlities";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
